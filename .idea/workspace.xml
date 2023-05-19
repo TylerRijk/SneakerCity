@@ -10,6 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Beheer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Beheer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klantgegevens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klantgegevens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Medewerker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Medewerker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +32,8 @@
       <list>
         <option value="Class" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,6 +75,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "ignore.virus.scanning.warn.message": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,7 +91,55 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BusinessLayerTest">
+    <configuration name="BusinessLayerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IPASS-SneakerCity" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BusinessLayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BusinessLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IPASS-SneakerCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BusinessLayerTest.testVoegBestellingToe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IPASS-SneakerCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
+      <option name="METHOD_NAME" value="testVoegBestellingToe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.74" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.74" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -164,6 +228,13 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BusinessLayerTest" />
+        <item itemvalue="JUnit.BusinessLayerTest (1)" />
+        <item itemvalue="JUnit.BusinessLayerTest.testVoegBestellingToe" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -174,6 +245,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684236379697</updated>
       <workItem from="1684236380731" duration="2274000" />
+      <workItem from="1684256901955" duration="1081000" />
+      <workItem from="1684505577034" duration="2210000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>

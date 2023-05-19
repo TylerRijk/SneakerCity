@@ -18,4 +18,32 @@ public class Sneaker {
         this.prijs = prijs;
         this.image = image;
     }
+
+    public int getArtikelnummer() {
+        return artikelnummer;
+    }
+
+    public String getMerk() {
+        return merk;
+    }
+
+    public String getKleur() {
+        return kleur;
+    }
+
+    public int getMaat() {
+        return maat;
+    }
+
+    public String getBeschrijving() {
+        return beschrijving;
+    }
+
+    public double getPrijs() {
+        return prijs;
+    }
+
+    public String getImage() {
+        return image;
+    }
 }

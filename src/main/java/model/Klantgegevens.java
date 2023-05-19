@@ -14,4 +14,24 @@ public class Klantgegevens {
         this.woonplaats = woonplaats;
         this.telefoonnummer = telefoonnummer;
     }
+
+    public String getVoornaam() {
+        return voornaam;
+    }
+
+    public String getAchternaam() {
+        return achternaam;
+    }
+
+    public String getAdres() {
+        return adres;
+    }
+
+    public String getWoonplaats() {
+        return woonplaats;
+    }
+
+    public String getTelefoonnummer() {
+        return telefoonnummer;
+    }
 }

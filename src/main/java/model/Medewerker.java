@@ -10,4 +10,16 @@ public class Medewerker {
         this.email = email;
         this.wachtwoord = wachtwoord;
     }
+
+    public int getMedewerkerID() {
+        return medewerkerID;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getWachtwoord() {
+        return wachtwoord;
+    }
 }
