@@ -8,8 +8,9 @@ public class Sneaker {
     private String beschrijving;
     private double prijs;
     private String image;
+    private int voorraad;
 
-    public Sneaker(int artikelnummer, String merk, String kleur, int maat, String beschrijving, double prijs, String image) {
+    public Sneaker(int artikelnummer, String merk, String kleur, int maat, String beschrijving, double prijs, String image, int voorraad) {
         this.artikelnummer = artikelnummer;
         this.merk = merk;
         this.kleur = kleur;
@@ -17,6 +18,7 @@ public class Sneaker {
         this.beschrijving = beschrijving;
         this.prijs = prijs;
         this.image = image;
+        this.voorraad = voorraad;
     }
 
     public int getArtikelnummer() {
@@ -43,7 +45,30 @@ public class Sneaker {
         return prijs;
     }
 
+    public void setPrijs(double prijs) {
+        if (prijs <= 0) {
+            throw new IllegalArgumentException("De prijs moet positief zijn");
+        }
+        this.prijs = prijs;
+    }
+
     public String getImage() {
         return image;
     }
+
+    public int getVoorraad() {
+        return voorraad;
+    }
+
+    public void setVoorraad(int voorraad) {
+        if (voorraad < 0) {
+            throw new IllegalArgumentException("De voorraad moet 0 of meer zijn");
+        }
+        this.voorraad = voorraad;
+    }
+
+    public boolean isOpVoorraad() {
+        return voorraad > 0;
+    }
+
 }

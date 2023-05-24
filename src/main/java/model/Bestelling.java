@@ -31,8 +31,19 @@ public class Bestelling {
         return totaalPrijs;
     }
 
+    public void setTotaalPrijs(double totaalPrijs) {
+        if (totaalPrijs < 0) {
+            throw new IllegalArgumentException("De totaalprijs moet positief zijn");
+        }
+        this.totaalPrijs = totaalPrijs;
+    }
+
     public boolean getBetalingStatus() {
         return betalingStatus;
+    }
+
+    public void setBetalingStatus(boolean betalingStatus) {
+        this.betalingStatus = betalingStatus;
     }
 
     public Klant getKlant() {
