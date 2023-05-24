@@ -25,20 +25,40 @@ public class Sneaker {
         return artikelnummer;
     }
 
+    public void setArtikelnummer(int artikelnummer) {
+        this.artikelnummer = artikelnummer;
+    }
+
     public String getMerk() {
         return merk;
+    }
+
+    public void setMerk(String merk) {
+        this.merk = merk;
     }
 
     public String getKleur() {
         return kleur;
     }
 
+    public void setKleur(String kleur) {
+        this.kleur = kleur;
+    }
+
     public int getMaat() {
         return maat;
     }
 
+    public void setMaat(int maat) {
+        this.maat = maat;
+    }
+
     public String getBeschrijving() {
         return beschrijving;
+    }
+
+    public void setBeschrijving(String beschrijving) {
+        this.beschrijving = beschrijving;
     }
 
     public double getPrijs() {
@@ -54,6 +74,10 @@ public class Sneaker {
 
     public String getImage() {
         return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getVoorraad() {

@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Model update en tests gemaakt voor modellaag">
       <change afterPath="$PROJECT_DIR$/src/main/java/util/DataStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/JerseyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/SneakerResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/util/DataStorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +29,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -98,7 +97,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BusinessLayerTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.74">
     <configuration name="BusinessLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
       <extension name="coverage">
@@ -179,6 +178,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.74" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.74" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -189,7 +189,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="947f8882-bc33-4a44-8320-7894a3fa941c" />
+        <option name="BASE_DIRECTORY_NAME" value="eb975d47-dabf-4faf-a1ab-a65f49a2ec9a" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -197,7 +197,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52049" />
+        <option name="DEBUG_PORT" value="65005" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -266,6 +266,26 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.BusinessLayerTest" />
+      <item itemvalue="JUnit.BusinessLayerTest.testGeldigeStatusBestelling" />
+      <item itemvalue="JUnit.BusinessLayerTest.testNegatieveSneakerPrijs" />
+      <item itemvalue="JUnit.BusinessLayerTest.testNegatieveVoorraad" />
+      <item itemvalue="JUnit.BusinessLayerTest.testPositieveVoorraad" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.74" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BusinessLayerTest" />
@@ -290,7 +310,8 @@
       <workItem from="1684754292551" duration="2526000" />
       <workItem from="1684831077203" duration="6718000" />
       <workItem from="1684840395130" duration="606000" />
-      <workItem from="1684847732790" duration="9073000" />
+      <workItem from="1684847732790" duration="13671000" />
+      <workItem from="1684928843949" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -306,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684238206689</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Model update en tests gemaakt voor modellaag">
+      <created>1684923122193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684923122193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +343,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Model update en tests gemaakt voor modellaag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model update en tests gemaakt voor modellaag" />
   </component>
 </project>
