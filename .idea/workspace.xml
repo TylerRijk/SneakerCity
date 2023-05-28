@@ -9,14 +9,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Model update en tests gemaakt voor modellaag">
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Begin gemaakt aan REST api">
       <change afterPath="$PROJECT_DIR$/src/main/java/util/DataStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/JerseyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/SneakerResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Raf-Simons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/adidas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/nike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/sneakercity-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/sneakercity-websitelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/yeezy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/util/DataStorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +52,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,6 +101,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tyler/IdeaProjects/IPASS-SneakerCity/src/main/webapp/login/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -89,8 +116,21 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\login\images" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\home\images" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\sneakers" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\home" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\sneakers" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\klant" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\login" />
+      <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\home" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Util" />
@@ -108,6 +148,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,8 +219,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.74" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.74" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="IPASS-SneakerCity:war exploded">
@@ -189,7 +228,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="eb975d47-dabf-4faf-a1ab-a65f49a2ec9a" />
+        <option name="BASE_DIRECTORY_NAME" value="06956ac7-850d-464a-a209-348dc3a24fb2" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -197,7 +236,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="65005" />
+        <option name="DEBUG_PORT" value="56070" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -266,18 +305,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.BusinessLayerTest" />
       <item itemvalue="JUnit.BusinessLayerTest.testGeldigeStatusBestelling" />
@@ -311,7 +338,15 @@
       <workItem from="1684831077203" duration="6718000" />
       <workItem from="1684840395130" duration="606000" />
       <workItem from="1684847732790" duration="13671000" />
-      <workItem from="1684928843949" duration="3411000" />
+      <workItem from="1684928843949" duration="3915000" />
+      <workItem from="1684935711675" duration="4882000" />
+      <workItem from="1684997461162" duration="4774000" />
+      <workItem from="1685006052892" duration="13000" />
+      <workItem from="1685008677436" duration="612000" />
+      <workItem from="1685098581741" duration="5666000" />
+      <workItem from="1685107878704" duration="1648000" />
+      <workItem from="1685176415159" duration="22000" />
+      <workItem from="1685277796847" duration="7373000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -334,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684923122193</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Begin gemaakt aan REST api">
+      <created>1684932776995</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684932776995</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +386,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="Model update en tests gemaakt voor modellaag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model update en tests gemaakt voor modellaag" />
+    <MESSAGE value="Begin gemaakt aan REST api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begin gemaakt aan REST api" />
   </component>
 </project>

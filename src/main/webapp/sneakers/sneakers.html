@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>SneakerCity | Sneakers</title>
+    <link rel="stylesheet" href="../sneakers/sneakers.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../images/sneakercity-logo.png" width="125">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sneakers/sneakers.html">Sneakers</a></li>
+                <li><a href="/login/login.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="sneaker-list">
+        <div class="sneaker-card">
+            <img src="../images/yeezy.png" alt="Sneaker 1">
+            <label onclick="selectSneaker('yeezy.png')"><h3 >Sneaker 1</h3></label>
+            <p>Prijs: 400,-</p>
+            <button>Bestel</button>
+        </div>
+        <div class="sneaker-card">
+            <img src="../images/nike.png" alt="Sneaker 2">
+            <label onclick="selectSneaker('nike.png')"><h3 >Sneaker 2</h3></label>
+            <p>Prijs: 300,-</p>
+            <button>Bestel</button>
+        </div>
+        <div class="sneaker-card">
+            <img src="../images/adidas.png" alt="Sneaker 3">
+            <label onclick="selectSneaker('adidas.png')"><h3 >Sneaker 3</h3></label>
+            <p>Prijs: 250,-</p>
+            <button>Bestel</button>
+        </div>
+        <div class="sneaker-card">
+            <img src="../images/Raf-Simons.png" alt="Sneaker 4">
+            <label onclick="selectSneaker('Raf-Simons.png')"><h3 >Sneaker 4</h3></label>
+            <p>Prijs: 250,-</p>
+            <button>Bestel</button>
+        </div>
+        <!-- Voeg hier extra sneakerkaarten toe -->
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <p>&copy; 2023 SneakerCity</p>
+    </div>
+</footer>
+
+<script src="sneakers.js"></script>
+</body>
+</html>

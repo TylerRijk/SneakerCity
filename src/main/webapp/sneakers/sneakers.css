@@ -1,0 +1,61 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: steelblue;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: black;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.middentext {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.sneaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sneaker-card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.sneaker-card img {
+    max-width: 100%;
+    height: auto;
+}
