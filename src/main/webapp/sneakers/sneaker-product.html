@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>SneakerCity | Sneaker Product</title>
     <link rel="stylesheet" href="sneaker-product.css">
+    <script src="sneaker-product.js"></script>
 </head>
 <body>
 <header>
@@ -11,31 +12,26 @@
         <div class="logo">
             <img src="../images/sneakercity-logo.png" width="125">
         </div>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/sneakers/sneakers.html">Sneakers</a></li>
-            <li><a href="/login/login.html">Account</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sneakers/sneakers.html">Sneakers</a></li>
+                <li><a href="/login/login.html">Account</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main>
-    <div class="sneaker-product">
-        <div class="sneaker-image">
-            <img src="../images/placeholder.png" alt="Sneaker Image" id="sneakerImage">
-            <p>Artikelnummer: 123456789</p>
-        </div>
-        <div class="sneaker-details">
-            <h2>Sneaker Titel</h2>
-            <p>Beschrijving: Dit is een geweldige sneaker met geweldige functies.</p>
-            <p>Merk: SneakerBrand</p>
-            <p>Kleur: Zwart</p>
-            <p>Maat: 42</p>
-            <p>Voorraad: 10</p>
-            <p>Prijs: 200,-</p>
-            <button>Bestellen</button>
-        </div>
+    <div class="sneaker-details">
+        <img id="sneaker-image" src="" alt="Sneaker{artikelnummer}">
+        <h2 id="sneaker-title"></h2>
+        <p id="sneaker-beschrijving"></p>
+        <p id="sneaker-merk"></p>
+        <p id="sneaker-kleur"></p>
+        <p id="sneaker-maat"></p>
+        <p id="sneaker-voorraad"></p>
+        <p id="sneaker-prijs"></p>
+        <button id="order-button">Bestel</button>
     </div>
 </main>
 <footer>
@@ -43,6 +39,5 @@
         <p>&copy; 2023 SneakerCity</p>
     </div>
 </footer>
-<script>src="sneakers.js"</script>
 </body>
 </html>

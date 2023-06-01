@@ -1,6 +1,9 @@
 package model;
 
-public class Sneaker {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Sneaker implements Serializable {
     private int artikelnummer;
     private String merk;
     private String kleur;
@@ -9,6 +12,8 @@ public class Sneaker {
     private double prijs;
     private String image;
     private int voorraad;
+
+    private static ArrayList<Sneaker> sneakers = new ArrayList<>();
 
     public Sneaker(int artikelnummer, String merk, String kleur, int maat, String beschrijving, double prijs, String image, int voorraad) {
         this.artikelnummer = artikelnummer;
@@ -19,6 +24,12 @@ public class Sneaker {
         this.prijs = prijs;
         this.image = image;
         this.voorraad = voorraad;
+        sneakers.add(this);
+    }
+
+
+    public static ArrayList<Sneaker> getSneakers() {
+        return sneakers;
     }
 
     public int getArtikelnummer() {
@@ -91,8 +102,5 @@ public class Sneaker {
         this.voorraad = voorraad;
     }
 
-    public boolean isOpVoorraad() {
-        return voorraad > 0;
-    }
 
 }

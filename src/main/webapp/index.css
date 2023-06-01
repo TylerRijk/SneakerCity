@@ -20,28 +20,16 @@ a{
     text-decoration: none;
     color: black;
 }
-p{
+.middentext p{
     color: black;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-family: "Arial Black";
 }
 
 .middentext {
     text-align: center;
+    font-family: "Arial Black";
 }
 
 .footer {
-    text-align: center;
-}
-
-.sneaker-card {
-    text-align: center;
-}
-
-.inloggen {
     text-align: center;
 }

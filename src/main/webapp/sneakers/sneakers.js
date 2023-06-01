@@ -1,13 +1,55 @@
-function selectSneaker(image) {
-    localStorage.setItem('selectedSneaker', image);
-    window.location.href = 'sneaker-product.html';
+// Data ophalen en structuur genereren
+function fetchSneakers() {
+    fetch('/restservices/sneakers')
+        .then(response => response.json())
+        .then(sneakers => generateSneakerCards(sneakers))
+        .catch(error => console.error('Error:', error));
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    const selectedSneaker = localStorage.getItem('selectedSneaker');
-    if (selectedSneaker) {
-        const sneakerImage = document.getElementById('sneakerImage');
-        sneakerImage.src = '../images/' + selectedSneaker;
-        sneakerImage.alt = 'Sneaker Image';
-    }
-});
+// Functie om alle sneaker cards te genereren
+function generateSneakerCards(sneakers) {
+    const sneakerList = document.querySelector('.sneaker-list');
+
+    sneakers.forEach(sneaker => {
+        const sneakerCard = createSneakerCard(sneaker);
+        sneakerList.appendChild(sneakerCard);
+    });
+}
+
+// Functie om een sneaker card te maken
+function createSneakerCard(sneaker) {
+    const sneakerCard = document.createElement('div');
+    sneakerCard.classList.add('sneaker-card');
+
+    const img = document.createElement('img');
+    img.src = `../images/${sneaker.image}`;
+    img.alt = `Sneaker ${sneaker.merk}`;
+    sneakerCard.appendChild(img);
+
+    const label = document.createElement('label');
+    const h3 = document.createElement('h3');
+    h3.textContent = `${sneaker.merk}`;
+    label.appendChild(h3);
+    label.addEventListener('click', () => {
+        navigateToSneakerProduct(sneaker.artikelnummer);
+    });
+    sneakerCard.appendChild(label);
+
+    const p = document.createElement('p');
+    p.textContent = `Prijs: €${sneaker.prijs}`;
+    sneakerCard.appendChild(p);
+
+    const button = document.createElement('button');
+    button.textContent = 'Bestel';
+    sneakerCard.appendChild(button);
+
+    return sneakerCard;
+}
+
+// Functie om de product pagina te gaan
+function navigateToSneakerProduct(artikelnummer) {
+    window.location.href = `sneaker-product.html?artikelnummer=${artikelnummer}`;
+}
+
+// Roep de functie aan wanneer de DOM geladen is
+document.addEventListener('DOMContentLoaded', fetchSneakers);

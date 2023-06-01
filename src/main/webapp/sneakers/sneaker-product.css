@@ -1,61 +1,87 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     padding: 20px;
     background-color: steelblue;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-nav ul{
+
+nav ul {
     display: inline-block;
     list-style-type: none;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
-}
-p{
-    color: black;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 header {
     margin-bottom: 20px;
 }
 
-.sneaker-product {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+footer {
+    text-align: center;
 }
 
-.sneaker-image {
-    width: 40%;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .sneaker-details {
-    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.sneaker-details h2 {
-    margin-top: 0;
-}
-
-.sneaker-details p {
+#sneaker-image {
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.sneaker-details button {
-    margin-top: 20px;
+#sneaker-title {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
+
+#sneaker-beschrijving,
+#sneaker-merk,
+#sneaker-kleur,
+#sneaker-maat {
+    margin-bottom: 5px;
+}
+
+#sneaker-voorraad {
+    margin-bottom: 10px;
+    color: black;
+}
+
+#sneaker-prijs {
+    margin-bottom: 10px;
+}
+
+#order-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

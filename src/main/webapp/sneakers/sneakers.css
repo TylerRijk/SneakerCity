@@ -1,41 +1,41 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     padding: 20px;
     background-color: steelblue;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-nav ul{
+
+nav ul {
     display: inline-block;
     list-style-type: none;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-p{
+
+p {
     color: black;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 header {
     margin-bottom: 20px;
 }
 
-.middentext {
+main h2 {
     text-align: center;
+    font-family: "Arial Black";
 }
 
 .footer {
@@ -47,6 +47,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .sneaker-card {
     width: calc(25% - 20px);
     margin-bottom: 20px;
