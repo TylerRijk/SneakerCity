@@ -45,7 +45,9 @@ main h2 {
 .sneaker-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: normal;
+    padding: 5px;
 }
 
 .sneaker-card {

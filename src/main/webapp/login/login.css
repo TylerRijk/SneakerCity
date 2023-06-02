@@ -20,28 +20,42 @@ a{
     text-decoration: none;
     color: black;
 }
-p{
-    color: black;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.middentext {
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-}
-
-.sneaker-card {
-    text-align: center;
-}
 
 .inloggen {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.input-field {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+p {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#loginButton {
+    margin: 20px;
+    text-align: center;
+    font-size: 2px;
+}
+
+#loginForm {
+    text-align: center;
+}
+
+span {
+    margin: 20px;
+}
+
+#registreerButton {
+    margin: 20px;
     text-align: center;
 }

@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>SneakerCity | Account</title>
+    <title>SneakerCity | Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 </head>
 <body>
 <header>
@@ -22,23 +23,17 @@
 </header>
 <main>
     <div class="inloggen">
-        <h1>Inloggen</h1>
-        <div>
-            <label for="username">Email:</label>
-            <input type="email" id="username" name="username" required>
-        </div>
-        <div>
-            <label for="password">Wachtwoord:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button>Inloggen</button>
-        <p>Heb je nog geen account? <a href="/register/register.html">Registreer hier</a>.</p>
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label for="username">Gebruikersnaam:</label><input class="input-field" type="text" id="username"/>
+            <label for="password">Wachtwoord:</label><input class="input-field" type="password" id="password"/>
+            <p id="errorMessage"></p>
+            <button onclick="gebruikerLogin()" type="button" id="login">Inloggen</button>
+        </form>
+        <span>Heb je nog geen account? <button id="registreerButton"><a href="/register/register.html">Registreer</a></button></span>
     </div>
 </main>
 <footer>
-    <div class="footer">
-        <p>&copy; 2023 SneakerCity</p>
-    </div>
 </footer>
 </body>
 </html>

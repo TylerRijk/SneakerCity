@@ -1,33 +1,25 @@
 package model;
 
+import security.User;
+
 import java.util.ArrayList;
 
 public class Klant {
     private int id;
     private String email;
-    private String wachtwoord;
+    private String naam;
+    private User user;
     private ArrayList<Bestelling> bestellingen;
 
-    public Klant(int id, String email, String wachtwoord) {
+    public Klant(int id, String email, String naam, User user) {
         this.id = id;
         this.email = email;
-        this.wachtwoord = wachtwoord;
+        this.naam = naam;
+        this.user = user;
         this.bestellingen = new ArrayList<>();
     }
 
-    public void voegBestellingToe(Bestelling bestelling) {
-        bestellingen.add(bestelling);
-    }
-
-    public void verwijderBestelling(Bestelling bestelling) {
-        bestellingen.remove(bestelling);
-    }
-
-    public ArrayList<Bestelling> getBestellingen() {
-        return bestellingen;
-    }
-
-    public int getId() {
+    public int getID() {
         return id;
     }
 
@@ -35,7 +27,19 @@ public class Klant {
         return email;
     }
 
-    public String getWachtwoord() {
-        return wachtwoord;
+    public String getNaam() {
+        return naam;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void voegBestellingToe(Bestelling bestelling) {
+        bestellingen.add(bestelling);
+    }
+
+    public ArrayList<Bestelling> getBestellingen() {
+        return bestellingen;
     }
 }

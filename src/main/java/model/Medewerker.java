@@ -1,14 +1,18 @@
 package model;
 
+import security.User;
+
 public class Medewerker {
     private int medewerkerID;
     private String email;
-    private String wachtwoord;
+    private String naam;
+    private User user;
 
-    public Medewerker(int medewerkerID, String email, String wachtwoord) {
+    public Medewerker(int medewerkerID, String email, String naam, User user) {
         this.medewerkerID = medewerkerID;
         this.email = email;
-        this.wachtwoord = wachtwoord;
+        this.naam = naam;
+        this.user = user;
     }
 
     public int getMedewerkerID() {
@@ -19,7 +23,11 @@ public class Medewerker {
         return email;
     }
 
-    public String getWachtwoord() {
-        return wachtwoord;
+    public String getNaam() {
+        return naam;
+    }
+
+    public User getUser() {
+        return user;
     }
 }
