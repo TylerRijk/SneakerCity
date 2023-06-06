@@ -4,13 +4,15 @@
     <meta charset="UTF-8"/>
     <title>SneakerCity | Registreren</title>
     <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
 </head>
 <body>
 <header>
+    <div class="logo">
+        <img src="../images/sneakercity-websitelogo.png" width="125">
+    </div>
+    <h1 id="title">SneakerCity</h1>
     <div class="navbar">
-        <div class="logo">
-            <img src="../images/sneakercity-logo.png" width="125">
-        </div>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
@@ -22,20 +24,26 @@
 </header>
 <main>
     <div class="registreren">
-        <h1>Registreren</h1>
-            <div>
-                <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Wachtwoord:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button>Registreren</button>
+        <form id="registerForm">
+            <h2>Registreren</h2>
+            <p>Vul hier uw gegevens in om een account aan te maken.</p>
+            <hr>
+
+            <label for="username"><b>Gebruikersnaam:</b></label>
+            <input class="input-field" type="text" placeholder="Vul hier je Gebruikersnaam in" id="username" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input class="input-field" type="email" placeholder="Vul hier je Email in" id="email" required>
+
+            <label for="password"><b>Wachtwoord:</b></label>
+            <input class="input-field" type="password" placeholder="Vul hier je Wachtwoord in" id="password" required>
+
+            <label for="password-repeat"><b>Herhaal Wachtwoord:</b></label>
+            <input class="input-field" type="password" placeholder="Herhaal Wachtwoord" id="password-repeat" required>
+            <hr>
+
+            <p id="errorMessage"></p>
+            <button onclick="gebruikerRegister()" type="button" class="registreerButton">Registreren</button>
         </form>
         <p>Heb je al een account? <a href="/login/login.html">Log hier in</a>.</p>
     </div>

@@ -20,6 +20,7 @@ function gebruikerLogin() {
         })
         .then(myJson => {
             window.sessionStorage.setItem("myJWT", myJson.JWT)
+            window.sessionStorage.setItem("loggedInUser", "true")
 
             fetch("/restservices/user/role", {
                 headers: {

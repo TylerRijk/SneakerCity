@@ -9,40 +9,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Back-end: Sneakers tonen en toevoegen klaar&#10;Front-end: Sneakers tonen klaar, alleen nog mooi maken">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/LogonRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceBestelling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceKlant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceMedewerker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/security/MySecurityContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/security/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/klanten/klant1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/medewerkers/medewerker1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker4.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login/login.js" afterDir="false" />
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker">
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klantgegevens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klantgegevens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klantgegevens.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Medewerker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Medewerker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/JerseyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/JerseyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceKlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceKlant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceMedewerker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceMedewerker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceSneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceSneaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/security/MySecurityContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/MySecurityContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/security/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/klanten/klant1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/medewerkers/medewerker1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker3.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker4.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +54,8 @@
         <option value="JUnit5 Test Class" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -131,6 +130,9 @@
       <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\klant" />
       <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\login" />
       <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\home" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="model" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Util" />
@@ -342,7 +344,8 @@
       <workItem from="1685377906929" duration="3326000" />
       <workItem from="1685436513559" duration="19069000" />
       <workItem from="1685515926911" duration="1842000" />
-      <workItem from="1685608129071" duration="37086000" />
+      <workItem from="1685608129071" duration="37650000" />
+      <workItem from="1685815255591" duration="37151000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -386,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685617623291</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker">
+      <created>1685722749090</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685722749090</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +409,7 @@
     <MESSAGE value="Begin gemaakt aan REST api" />
     <MESSAGE value="Begin gemaakt aan front-end van de use case sneaker tonen en sneaker zoeken" />
     <MESSAGE value="Back-end: Sneakers tonen en toevoegen klaar&#10;Front-end: Sneakers tonen klaar, alleen nog mooi maken" />
-    <option name="LAST_COMMIT_MESSAGE" value="Back-end: Sneakers tonen en toevoegen klaar&#10;Front-end: Sneakers tonen klaar, alleen nog mooi maken" />
+    <MESSAGE value="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker" />
   </component>
 </project>

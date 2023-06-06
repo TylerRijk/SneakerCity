@@ -1,28 +1,55 @@
-.navbar {
+body {
+    background: linear-gradient(110.2deg, rgb(54, 197, 240) 8.2%, rgb(74, 21, 75) 92.4%);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: steelblue;
 }
 
-nav {
-    flex: 1;
-    text-align: right;
+.logo img {
+    max-width: 100px;
 }
 
-nav ul {
-    display: inline-block;
-    list-style-type: none;
+#title {
+    margin-left: 20px;
+    font-family: Candara;
+    font-style: italic;
+}
+.navbar {
+    margin-left: auto;
+    color: #d5e9f0;
 }
 
-nav ul li {
-    display: inline-block;
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
     margin-right: 20px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-a {
+.navbar ul li a {
+    color: #333;
     text-decoration: none;
-    color: black;
 }
 
 header {
@@ -40,27 +67,30 @@ main {
     height: 100vh;
 }
 
-/*.sneaker-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 400px;
-    padding: 20px;
+.sneaker-details {
+    background: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
-}*/
+}
 
 #sneaker-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 65%;
     max-width: 600px;
     position: relative;
     margin-bottom: 10px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 #sneaker-title {
     font-size: 24px;
     margin-bottom: 10px;
-
+    text-align: center;
 }
 
 #sneaker-beschrijving,
@@ -68,23 +98,34 @@ main {
 #sneaker-kleur,
 #sneaker-maat {
     margin-bottom: 5px;
+    text-align: center;
 }
 
 #sneaker-voorraad {
     margin-bottom: 10px;
     color: black;
+    text-align: center;
 }
 
 #sneaker-prijs {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #order-button {
-    background-color: #007bff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background: #113f67;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
+footer {
+    background: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}

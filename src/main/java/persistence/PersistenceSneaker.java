@@ -6,8 +6,9 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class PersistenceSneaker {
-    private static final String PERSISTENCE_DIRECTORY = "C:\\Users\\tyler\\IdeaProjects\\IPASS-SneakerCity\\src\\main\\resources\\data\\sneakers";
+    private static final String PERSISTENCE_DIRECTORY = "sneakers";
     private static final String FILE_EXTENSION = ".obj";
+
 
     public static void saveSneaker(Sneaker sneaker) {
         File dir = new File(PERSISTENCE_DIRECTORY);
@@ -63,10 +64,5 @@ public class PersistenceSneaker {
 
     public static String getPersistenceDirectory(int artikelnummer) {
         return PERSISTENCE_DIRECTORY + "\\sneaker" + artikelnummer;
-    }
-
-    private static String getAbsolutePath() {
-        String currentDirectory = System.getProperty("user.dir");
-        return currentDirectory + File.separator + PERSISTENCE_DIRECTORY;
     }
 }

@@ -1,17 +1,19 @@
 package webservices;
 
-import security.User;
+import helpers.RegisterRequest;
+import model.Klant;
+import persistence.PersistenceKlant;
+import model.User;
 
 import javax.annotation.security.RolesAllowed;
 import javax.json.Json;
 import javax.json.JsonObjectBuilder;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
+import java.util.ArrayList;
 
 @Path("/user")
 public class UserResource {
@@ -33,5 +35,31 @@ public class UserResource {
         }
 
         return Json.createObjectBuilder().add("error", "role not found").build().toString();
+    }
+
+    @POST
+    @Path("/register")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response registerUser(RegisterRequest registerRequest) {
+        String username = registerRequest.username;
+        String password = registerRequest.password;
+        String email = registerRequest.email;
+
+        if (User.getUserByName(username) != null) {
+            return Response.status(Response.Status.BAD_REQUEST).entity("Gebruikersnaam al in gebruik").build();
+        }
+
+        Klant klant = new Klant(username, password, "klant", User.generateId(), email);
+        PersistenceKlant.saveKlant(klant);
+
+        return Response.status(Response.Status.OK).build();
+    }
+
+    @GET
+    @Path("/klanten")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllKlanten() {
+        ArrayList<Klant> klanten = PersistenceKlant.loadAllKlanten();
+        return Response.status(Response.Status.OK).entity(klanten).build();
     }
 }

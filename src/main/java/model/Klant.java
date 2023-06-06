@@ -1,38 +1,19 @@
 package model;
 
-import security.User;
-
 import java.util.ArrayList;
 
-public class Klant {
-    private int id;
+public class Klant extends User {
     private String email;
-    private String naam;
-    private User user;
     private ArrayList<Bestelling> bestellingen;
 
-    public Klant(int id, String email, String naam, User user) {
-        this.id = id;
+    public Klant(String username, String password, String role, int id, String email) {
+        super(username, password, role, id);
         this.email = email;
-        this.naam = naam;
-        this.user = user;
         this.bestellingen = new ArrayList<>();
-    }
-
-    public int getID() {
-        return id;
     }
 
     public String getEmail() {
         return email;
-    }
-
-    public String getNaam() {
-        return naam;
-    }
-
-    public User getUser() {
-        return user;
     }
 
     public void voegBestellingToe(Bestelling bestelling) {

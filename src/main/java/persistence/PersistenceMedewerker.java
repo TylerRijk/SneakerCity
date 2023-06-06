@@ -3,9 +3,10 @@ package persistence;
 import model.Medewerker;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class PersistenceMedewerker {
-    private static final String PERSISTENCE_DIRECTORY = "C:\\Users\\tyler\\IdeaProjects\\IPASS-SneakerCity\\src\\main\\resources\\data\\medewerkers";
+    private static final String PERSISTENCE_DIRECTORY = "medewerkers";
     private static final String FILE_EXTENSION = ".obj";
 
     public static void saveMedewerker(Medewerker medewerker) {
@@ -14,7 +15,7 @@ public class PersistenceMedewerker {
             dir.mkdirs();
         }
 
-        String fileName = PERSISTENCE_DIRECTORY + "/medewerker" + medewerker.getMedewerkerID() + FILE_EXTENSION;
+        String fileName = PERSISTENCE_DIRECTORY + "/medewerker" + medewerker.getId() + FILE_EXTENSION;
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(fileName))) {
             outputStream.writeObject(medewerker);
         } catch (IOException e) {
@@ -37,4 +38,27 @@ public class PersistenceMedewerker {
 
         return null;
     }
+
+    public static ArrayList<Medewerker> loadAllMedewerkers() {
+        ArrayList<Medewerker> medewerkers = new ArrayList<>();
+        File directory = new File(PERSISTENCE_DIRECTORY);
+        if (!directory.exists()) {
+            return medewerkers;
+        }
+
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(file))) {
+                    Medewerker medewerker = (Medewerker) inputStream.readObject();
+                    medewerkers.add(medewerker);
+                } catch (IOException | ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        return medewerkers;
+    }
+
 }
