@@ -9,39 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/register/register.js" afterDir="false" />
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Algemene layout aangepast&#10;Domeinmodel verbeterd (User -&gt; klant / medewerker)&#10;Login en register functionaliteit toegevoegd&#10;Persistence update voor klant">
+      <change afterPath="$PROJECT_DIR$/sneakers/sneaker0.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sneakers/sneaker99.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sneakers/sneaker999.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sneakers/sneaker9999.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/persistence/PersistenceKlantTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/persistence/PersistenceMedewerkerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/persistence/PersistenceSneakerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/webservices/SneakerResourceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klantgegevens.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Medewerker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Medewerker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceKlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceKlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceMedewerker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceMedewerker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceSneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceSneaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/MySecurityContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/MySecurityContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/klanten/klant1.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/medewerkers/medewerker1.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker1.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker2.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker3.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/sneakers/sneaker4.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Sneaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/DataStorageTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +35,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
         <option value="JavaScript File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="334cf49e-56e4-4916-9194-9856a9728758" />
+        <option name="url" value="https://github.com/TylerRijk/IPASS-SneakerCity.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -85,35 +82,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tyler/IdeaProjects/IPASS-SneakerCity/src/main/webapp/login/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/tyler/IdeaProjects/IPASS-SneakerCity/src/main/webapp/login/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tyler\IdeaProjects\IPASS-SneakerCity\src\main\webapp\login\images" />
@@ -135,18 +133,13 @@
       <recent name="model" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="webservices" />
+      <recent name="persistence" />
       <recent name="Util" />
       <recent name="model" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.74">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="IPASS-SneakerCity" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BusinessLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
       <extension name="coverage">
@@ -157,56 +150,61 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BusinessLayerTest.testGeldigeStatusBestelling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersistenceSneakerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
-      <option name="METHOD_NAME" value="testGeldigeStatusBestelling" />
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.PersistenceSneakerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersistenceSneakerTest.testSaveSneaker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IPASS-SneakerCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.PersistenceSneakerTest" />
+      <option name="METHOD_NAME" value="testSaveSneaker" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BusinessLayerTest.testNegatieveVoorraad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SneakerResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="webservices.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
-      <option name="METHOD_NAME" value="testNegatieveVoorraad" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="webservices" />
+      <option name="MAIN_CLASS_NAME" value="webservices.SneakerResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BusinessLayerTest.testPositieveVoorraad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="java in IPASS-SneakerCity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.BusinessLayerTest" />
-      <option name="METHOD_NAME" value="testPositieveVoorraad" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -299,20 +297,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.SneakerResourceTest" />
+      <item itemvalue="JUnit.PersistenceSneakerTest" />
+      <item itemvalue="JUnit.PersistenceSneakerTest.testSaveSneaker" />
+      <item itemvalue="JUnit.java in IPASS-SneakerCity" />
       <item itemvalue="JUnit.BusinessLayerTest" />
-      <item itemvalue="JUnit.BusinessLayerTest.testGeldigeStatusBestelling" />
-      <item itemvalue="JUnit.BusinessLayerTest.testNegatieveVoorraad" />
-      <item itemvalue="JUnit.BusinessLayerTest.testPositieveVoorraad" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.74" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BusinessLayerTest" />
-        <item itemvalue="JUnit.BusinessLayerTest.testGeldigeStatusBestelling" />
-        <item itemvalue="JUnit.BusinessLayerTest.testNegatieveVoorraad" />
-        <item itemvalue="JUnit.BusinessLayerTest.testPositieveVoorraad" />
+        <item itemvalue="JUnit.SneakerResourceTest" />
+        <item itemvalue="JUnit.PersistenceSneakerTest.testSaveSneaker" />
+        <item itemvalue="JUnit.java in IPASS-SneakerCity" />
+        <item itemvalue="JUnit.PersistenceSneakerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +343,12 @@
       <workItem from="1685436513559" duration="19069000" />
       <workItem from="1685515926911" duration="1842000" />
       <workItem from="1685608129071" duration="37650000" />
-      <workItem from="1685815255591" duration="37151000" />
+      <workItem from="1685815255591" duration="38550000" />
+      <workItem from="1686123934792" duration="9163000" />
+      <workItem from="1686134673871" duration="640000" />
+      <workItem from="1686140457026" duration="1156000" />
+      <workItem from="1686206867700" duration="2976000" />
+      <workItem from="1686213069372" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -396,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685722749090</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Algemene layout aangepast&#10;Domeinmodel verbeterd (User -&gt; klant / medewerker)&#10;Login en register functionaliteit toegevoegd&#10;Persistence update voor klant">
+      <created>1686044535627</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686044535627</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +420,7 @@
     <MESSAGE value="Begin gemaakt aan front-end van de use case sneaker tonen en sneaker zoeken" />
     <MESSAGE value="Back-end: Sneakers tonen en toevoegen klaar&#10;Front-end: Sneakers tonen klaar, alleen nog mooi maken" />
     <MESSAGE value="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker" />
+    <MESSAGE value="Algemene layout aangepast&#10;Domeinmodel verbeterd (User -&gt; klant / medewerker)&#10;Login en register functionaliteit toegevoegd&#10;Persistence update voor klant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Algemene layout aangepast&#10;Domeinmodel verbeterd (User -&gt; klant / medewerker)&#10;Login en register functionaliteit toegevoegd&#10;Persistence update voor klant" />
   </component>
 </project>

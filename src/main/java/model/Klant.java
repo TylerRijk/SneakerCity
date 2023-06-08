@@ -23,4 +23,16 @@ public class Klant extends User {
     public ArrayList<Bestelling> getBestellingen() {
         return bestellingen;
     }
+
+//    @Override
+//    public boolean equals(Object andereObject) {
+//        boolean gelijkeObjecten = false;
+//        if (andereObject instanceof Klant) {
+//            Klant andereKlant = (Klant) andereObject;
+//            if (andereKlant.getId() == this.id) {
+//                gelijkeObjecten = true;
+//            }
+//        }
+//        return gelijkeObjecten;
+//    }
 }

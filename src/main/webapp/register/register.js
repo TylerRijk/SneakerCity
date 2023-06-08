@@ -4,6 +4,11 @@ function gebruikerRegister() {
     let password = document.getElementById('password').value;
     let passwordRepeat = document.getElementById('password-repeat').value;
 
+    if (!username || !email || !password || !passwordRepeat) {
+        document.getElementById('errorMessage').textContent = 'Vul alle velden in!';
+        return;
+    }
+
     if (password !== passwordRepeat) {
         document.getElementById('errorMessage').textContent = 'Wachtwoord komt niet overeen';
         return;
@@ -15,7 +20,7 @@ function gebruikerRegister() {
         'password': password
     };
 
-    console.log(jsonRequestBody);
+    //console.log(jsonRequestBody);
 
     fetch("/restservices/user/register", {
         headers: {"Content-Type": "application/json"},

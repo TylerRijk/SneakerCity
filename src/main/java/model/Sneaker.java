@@ -2,6 +2,7 @@ package model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Sneaker implements Serializable {
     private int artikelnummer;
@@ -102,5 +103,15 @@ public class Sneaker implements Serializable {
         this.voorraad = voorraad;
     }
 
-
+//    @Override
+//    public boolean equals(Object andereObject) {
+//        boolean gelijkeObjecten = false;
+//        if (andereObject instanceof Sneaker) {
+//            Sneaker andereSneaker = (Sneaker) andereObject;
+//            if (andereSneaker.getArtikelnummer() == this.artikelnummer) {
+//                gelijkeObjecten = true;
+//            }
+//        }
+//        return gelijkeObjecten;
+//    }
 }

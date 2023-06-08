@@ -11,4 +11,16 @@ public class Medewerker extends User {
     public String getEmail() {
         return email;
     }
+
+//    @Override
+//    public boolean equals(Object andereObject) {
+//        boolean gelijkeObjecten = false;
+//        if (andereObject instanceof Medewerker) {
+//            Medewerker andereMedewerker = (Medewerker) andereObject;
+//            if (andereMedewerker.getId() == this.id) {
+//                gelijkeObjecten = true;
+//            }
+//        }
+//        return gelijkeObjecten;
+//    }
 }

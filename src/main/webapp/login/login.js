@@ -1,6 +1,11 @@
 function gebruikerLogin() {
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
+
+    if (!username || !password) {
+        document.querySelector('#errorMessage').innerHTML = "Vul zowel gebruikersnaam en wachtwoord in!";
+        return;
+    }
     const jsonRequestBody = {'username': username, 'password': password};
 
     //console.log(jsonRequestBody);
