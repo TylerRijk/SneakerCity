@@ -62,4 +62,23 @@ public class UserResource {
         ArrayList<Klant> klanten = PersistenceKlant.loadAllKlanten();
         return Response.status(Response.Status.OK).entity(klanten).build();
     }
+
+    @GET
+    @Path("/profile")
+    @RolesAllowed({"klant", "admin"})
+    @Produces(MediaType.APPLICATION_JSON)
+    public String getProfile(@Context SecurityContext sc) {
+        if (sc.getUserPrincipal() instanceof User) {
+            User current = (User) sc.getUserPrincipal();
+            return Json.createObjectBuilder()
+                    .add("username", current.getName())
+                    .add("password", current.getPassword())
+                    .build()
+                    .toString();
+        }
+        return Json.createObjectBuilder()
+                .add("error", "Something went wrong")
+                .build()
+                .toString();
+    }
 }
