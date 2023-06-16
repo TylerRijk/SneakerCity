@@ -1,9 +1,7 @@
-// Data ophalen en structuur genereren
+// Functie om sneakers op te halen vanuit de back-end
 function fetchSneakers() {
-    fetch('/restservices/sneakers')
-        .then(response => response.json())
-        .then(sneakers => generateSneakerCards(sneakers))
-        .catch(error => console.error('Error:', error));
+    return fetch('/restservices/sneakers')
+        .then(response => response.json());
 }
 
 // Functie om alle sneaker cards te genereren
@@ -52,4 +50,9 @@ function navigateToSneakerProduct(artikelnummer) {
 }
 
 // Roep de functie aan wanneer de DOM geladen is
-document.addEventListener('DOMContentLoaded', fetchSneakers);
+document.addEventListener('DOMContentLoaded', () => {
+    // Roep de promise aan van fetchSneakers
+    fetchSneakers()
+        .then(sneakers => generateSneakerCards(sneakers))
+        .catch(error => console.error('Error:', error));
+});
