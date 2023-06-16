@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SneakerCity | Sneaker toevoegen</title>
+    <link rel="stylesheet" href="sneaker-toevoegen.css">
+    <script src="sneaker-toevoegen.js"></script>
+    <script src="../../loginCheck.js"></script>
 </head>
 <body>
+<header>
+    <div class="logo">
+        <img src="../../images/sneakercity-websitelogo.png" width="100">
+    </div>
+    <h1 id="title"><b>SneakerCity</b></h1>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../sneakers/sneakers.html">Sneakers</a></li>
+                <li><a id="accountLink" href="../account/account.html" onclick="checkLogin()">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="sneaker-toevoegen">
+        <form id="sneakerForm">
+            <label for="artikelnummer">Artikelnummer:</label>
+            <input class="input-field" type="text" id="artikelnummer">
 
+            <label for="merk">Merk:</label>
+            <input class="input-field" type="text" id="merk">
+
+            <label for="kleur">Kleur:</label>
+            <input class="input-field" type="text" id="kleur">
+
+            <label for="maat">Maat:</label>
+            <input class="input-field" type="number" id="maat">
+
+            <label for="beschrijving">Beschrijving:</label>
+            <input class="input-field" type="text" id="beschrijving">
+
+            <label for="prijs">Prijs:</label>
+            <input class="input-field" type="number" id="prijs">
+
+            <label for="image">Foto:</label>
+            <input class="input-field" type="text" id="image">
+
+            <label for="voorraad">Voorraad:</label>
+            <input class="input-field" type="number" id="voorraad">
+
+            <button onclick="sneakerToevoegen()" type="button" id="toevoegButton">Sneaker toevoegen</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <p>&copy; 2023 SneakerCity</p>
+    </div>
+</footer>
 </body>
 </html>

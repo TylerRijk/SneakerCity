@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Tests toegevoegd&#10;&#10;Kleine update aan domeinmodel">
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slipper.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +343,8 @@
       <workItem from="1686213069372" duration="2375000" />
       <workItem from="1686557761183" duration="1628000" />
       <workItem from="1686577112529" duration="46000" />
-      <workItem from="1686727277911" duration="13752000" />
+      <workItem from="1686727277911" duration="17020000" />
+      <workItem from="1686811717334" duration="22048000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -409,7 +409,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686214953007</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Gebruiker blijft ingelogd door JWT te valideren bij elke pagina">
+      <created>1686747955709</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686747955709</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Gebruiker blijft ingelogd door JWT te valideren bij elke pagina">
+      <created>1686748182869</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686748182869</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Sneakers.js verbeterd a.d.h.v feedback Sprint 2">
+      <created>1686917372355</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686917372355</updated>
+    </task>
+    <task id="LOCAL-00013" summary="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)">
+      <created>1686917482161</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686917482161</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +464,9 @@
     <MESSAGE value="Security toegevoegd om te kunnen inloggen&#10;Inlog functie gemaakt en werkend gekregen met REST api&#10;Domeinmodel veranderd (klantgegevens -&gt; Klant) en Medewerker&#10;File persistency van klanten en medewerker" />
     <MESSAGE value="Algemene layout aangepast&#10;Domeinmodel verbeterd (User -&gt; klant / medewerker)&#10;Login en register functionaliteit toegevoegd&#10;Persistence update voor klant" />
     <MESSAGE value="Tests toegevoegd&#10;&#10;Kleine update aan domeinmodel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests toegevoegd&#10;&#10;Kleine update aan domeinmodel" />
+    <MESSAGE value="Gebruiker blijft ingelogd door JWT te valideren bij elke pagina" />
+    <MESSAGE value="Sneakers.js verbeterd a.d.h.v feedback Sprint 2" />
+    <MESSAGE value="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)" />
+    <option name="LAST_COMMIT_MESSAGE" value="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)" />
   </component>
 </project>
