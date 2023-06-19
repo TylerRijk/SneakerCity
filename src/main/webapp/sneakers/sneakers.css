@@ -81,6 +81,16 @@ h2 {
     text-align: center;
 }
 
+button {
+    background: #113f67;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
 .sneaker-card img {
     max-width: 100%;
     height: auto;

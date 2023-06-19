@@ -62,7 +62,11 @@ public class PersistenceSneaker {
         return sneakers;
     }
 
-    public static String getPersistenceDirectory(int artikelnummer) {
-        return PERSISTENCE_DIRECTORY + "\\sneaker" + artikelnummer;
+    public static void deleteSneaker(int artikelnummer) {
+        String fileName = PERSISTENCE_DIRECTORY + "/sneaker" + artikelnummer + FILE_EXTENSION;
+        File file = new File(fileName);
+        if(file.exists()) {
+            file.delete();
+        }
     }
 }

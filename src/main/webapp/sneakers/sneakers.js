@@ -41,6 +41,11 @@ function createSneakerCard(sneaker) {
     button.textContent = 'Bestel';
     sneakerCard.appendChild(button);
 
+    button.addEventListener('click', function() {
+        window.location.href = '../bestelling/bestelling.html';
+    });
+
+
     return sneakerCard;
 }
 

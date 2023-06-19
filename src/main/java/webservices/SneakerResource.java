@@ -64,41 +64,48 @@ public class SneakerResource {
     }
 
     @PUT
-    @Path("/{artikelnummer}")
+    @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response updateSneaker(@PathParam("artikelnummer") int artikelnummer, Sneaker updatedSneaker) {
-        Sneaker sneaker = PersistenceSneaker.loadSneaker(artikelnummer);
-        if (sneaker != null) {
-            sneaker.setMerk(updatedSneaker.getMerk());
-            sneaker.setKleur(updatedSneaker.getKleur());
-            sneaker.setMaat(updatedSneaker.getMaat());
-            sneaker.setBeschrijving(updatedSneaker.getBeschrijving());
-            sneaker.setPrijs(updatedSneaker.getPrijs());
-            sneaker.setImage(updatedSneaker.getImage());
-            sneaker.setVoorraad(updatedSneaker.getVoorraad());
-
-            PersistenceSneaker.saveSneaker(sneaker);
-
-            return Response.status(Response.Status.OK).build();
-        } else {
-            return Response.status(Response.Status.NOT_FOUND).build();
+    @Path("/{artikelnummer}")
+    public Response updateSneaker(@PathParam("artikelnummer") int artikelnummer, SneakerRequest sneakerRequest) {
+        if (sneakerRequest.artikelnummer == 0
+                || sneakerRequest.merk == null || sneakerRequest.merk.isEmpty()
+                || sneakerRequest.kleur == null || sneakerRequest.kleur.isEmpty()
+                || sneakerRequest.maat == 0
+                || sneakerRequest.beschrijving == null || sneakerRequest.beschrijving.isEmpty()
+                || sneakerRequest.prijs == 0
+                || sneakerRequest.image == null || sneakerRequest.image.isEmpty()
+                || sneakerRequest.voorraad == 0) {
+            return Response.status(Response.Status.BAD_REQUEST).build();
         }
+
+        Sneaker sneaker = PersistenceSneaker.loadSneaker(artikelnummer);
+
+        if (sneaker != null) {
+            sneaker.setMerk(sneakerRequest.merk);
+            sneaker.setKleur(sneakerRequest.kleur);
+            sneaker.setMaat(sneakerRequest.maat);
+            sneaker.setBeschrijving(sneakerRequest.beschrijving);
+            sneaker.setPrijs(sneakerRequest.prijs);
+            sneaker.setImage(sneakerRequest.image);
+            sneaker.setVoorraad(sneakerRequest.voorraad);
+            PersistenceSneaker.saveSneaker(sneaker);
+            return Response.status(Response.Status.OK).build();
+        }
+
+        return Response.status(Response.Status.NOT_FOUND).build();
     }
 
-    // DELETE EN PUT WERKT NOG NIET
     @DELETE
     @Path("/{artikelnummer}")
     public Response deleteSneaker(@PathParam("artikelnummer") int artikelnummer) {
         Sneaker sneaker = PersistenceSneaker.loadSneaker(artikelnummer);
-        if (sneaker != null) {
-            File file = new File(PersistenceSneaker.getPersistenceDirectory(artikelnummer));
-            if (file.exists()) {
-                file.delete();
-            }
 
-            return Response.status(Response.Status.OK).build();
-        } else {
-            return Response.status(Response.Status.NOT_FOUND).build();
+        if (sneaker != null) {
+            PersistenceSneaker.deleteSneaker(artikelnummer);
+            return Response.ok().build();
         }
+
+        return Response.status(Response.Status.NOT_FOUND).build();
     }
 }

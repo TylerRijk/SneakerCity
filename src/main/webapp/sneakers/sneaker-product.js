@@ -33,8 +33,8 @@ function populateSneakerDetails(sneaker) {
     sneakerPrijs.textContent = `Prijs: €${sneaker.prijs}`;
     sneakerVoorraad.textContent = `Voorraad: ${sneaker.voorraad ? 'Op voorraad' : 'Niet op voorraad'}`;
     orderButton.addEventListener('click', () => {
-        // Code om bestelling te verwerken nog niet gedaan
         console.log('Bestelling geplaatst:', sneaker);
+        window.location.href = "../bestelling/bestelling.html"
     });
 }
 

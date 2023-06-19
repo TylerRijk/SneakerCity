@@ -9,15 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.js" afterDir="false" />
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Admin account uitgewerkt en Use Case Sneakers Toevoegen werkend gemaakt. Design alleen nog verbeteren.&#10;Elke nieuwe sneaker wordt gelijk opgeslagen en getoond">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slipper.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceSneaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceSneaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/SneakerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/SneakerResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +353,10 @@
       <workItem from="1686557761183" duration="1628000" />
       <workItem from="1686577112529" duration="46000" />
       <workItem from="1686727277911" duration="17020000" />
-      <workItem from="1686811717334" duration="22048000" />
+      <workItem from="1686811717334" duration="22949000" />
+      <workItem from="1686991017386" duration="42000" />
+      <workItem from="1687157491741" duration="265000" />
+      <workItem from="1687158559448" duration="18433000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -437,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686917482161</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Admin account uitgewerkt en Use Case Sneakers Toevoegen werkend gemaakt. Design alleen nog verbeteren.&#10;Elke nieuwe sneaker wordt gelijk opgeslagen en getoond">
+      <created>1686918617085</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686918617086</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,6 +486,7 @@
     <MESSAGE value="Gebruiker blijft ingelogd door JWT te valideren bij elke pagina" />
     <MESSAGE value="Sneakers.js verbeterd a.d.h.v feedback Sprint 2" />
     <MESSAGE value="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)" />
-    <option name="LAST_COMMIT_MESSAGE" value="SneakerResource.java verbeterd a.d.h.v feedback Sprint 2&#10;(checks toegevoegd)" />
+    <MESSAGE value="Admin account uitgewerkt en Use Case Sneakers Toevoegen werkend gemaakt. Design alleen nog verbeteren.&#10;Elke nieuwe sneaker wordt gelijk opgeslagen en getoond" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin account uitgewerkt en Use Case Sneakers Toevoegen werkend gemaakt. Design alleen nog verbeteren.&#10;Elke nieuwe sneaker wordt gelijk opgeslagen en getoond" />
   </component>
 </project>
