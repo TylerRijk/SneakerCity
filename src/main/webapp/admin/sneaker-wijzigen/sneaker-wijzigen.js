@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sneakerWijzigen() {
+    // Ophalen waarden van de invoervelden
     let artikelnummer = document.getElementById('artikelnummer').value;
     let merk = document.getElementById('merk').value;
     let kleur = document.getElementById('kleur').value;
@@ -96,6 +97,7 @@ function sneakerWijzigen() {
     let image = document.getElementById('image').value;
     let voorraad = document.getElementById('voorraad').value;
 
+    // Body aanmaken met de gegevens van de gewijzigde sneaker
     const jsonRequestBody = {
         'artikelnummer': artikelnummer,
         'merk': merk,
@@ -110,12 +112,14 @@ function sneakerWijzigen() {
     // console.log(jsonRequestBody);
     // console.log(jsonRequestBody["artikelnummer"])
 
+    // PUT verzoek naar de server maken om sneaker te wijzigen
     fetch("/restservices/sneakers/" + jsonRequestBody["artikelnummer"], {
         headers: {"Content-Type": "application/json"},
         method: "PUT",
         body: JSON.stringify(jsonRequestBody)
     })
         .then(function (response) {
+            // Als het antwoord van de server ok is, invoervelden leeg maken, sneakerDropdown updaten en melding geven
             if (response.ok) {
                 document.getElementById('artikelnummer').value = '';
                 document.getElementById('merk').value = '';
@@ -128,7 +132,9 @@ function sneakerWijzigen() {
 
                 populateSneakerDropdown();
                 alert("Sneaker gewijzigd")
-            } else if (response.status === 400) {
+            }
+            // Als server status 400 stuurt, dan zijn niet alle velden ingevuld
+            else if (response.status === 400) {
                 alert("Vul alle velden");
             } else {
                 console.log("Fout bij het verzenden van het formulier");
@@ -138,17 +144,21 @@ function sneakerWijzigen() {
 }
 
 function sneakerVerwijderen() {
+    // Ophalen artikelnummer van bestaande sneaker uit invoerveld
     const artikelnummer = document.getElementById('artikelnummer').value;
 
+    // Een bevestiging weergeven om te controleren of de gebruiker de sneaker wilt verwijderen
     if (!confirm("Weet je zeker dat je deze sneaker wilt verwijderen?")) {
         return;
     }
 
+    // DELETE verzoek naar de server maken om bestaande sneaker te verwijderen
     fetch(`/restservices/sneakers/${artikelnummer}`, {
         method: "DELETE"
     })
         .then(function (response) {
             if (response.ok) {
+                // Als het antwoord van de server ok is, invoervelden leeg maken en melding geven van succes
                 document.getElementById('artikelnummer').value = '';
                 document.getElementById('merk').value = '';
                 document.getElementById('kleur').value = '';
@@ -160,7 +170,9 @@ function sneakerVerwijderen() {
 
                 populateSneakerDropdown();
                 alert("Sneaker succesvol verwijderd");
-            } else if (response.status === 404) {
+            }
+            // Als server status 404 stuurt, dan bestaat de sneaker niet met ingevulde artikelnummer
+            else if (response.status === 404) {
                 alert("Sneaker niet gevonden");
             } else {
                 console.log("Fout bij het verwijderen van de sneaker");
