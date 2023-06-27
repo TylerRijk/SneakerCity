@@ -10,7 +10,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="../images/sneakercity-websitelogo.png" width="125">
+        <img src="../images/Sneakercity.png" width="125" alt="SneakerCity logo">
     </div>
     <h1 id="title">SneakerCity</h1>
     <div class="navbar">
@@ -25,15 +25,21 @@
 </header>
 <main>
     <div class="sneaker-details">
-        <img id="sneaker-image" src="" alt="Sneaker{artikelnummer}">
-        <h2 id="sneaker-title"></h2>
-        <p id="sneaker-beschrijving"></p>
-        <p id="sneaker-merk"></p>
-        <p id="sneaker-kleur"></p>
-        <p id="sneaker-maat"></p>
-        <p id="sneaker-voorraad"></p>
-        <p id="sneaker-prijs"></p>
-        <button id="order-button">Bestel</button>
+        <div class="sneaker-img">
+            <div class="img-wrapper">
+            <img id="sneaker-image" src="" alt="Sneaker{artikelnummer}">
+            </div>
+        </div>
+        <div class="sneaker-info">
+            <h2 id="sneaker-title"></h2>
+            <p id="sneaker-beschrijving"></p>
+            <p id="sneaker-merk"></p>
+            <p id="sneaker-kleur"></p>
+            <p id="sneaker-maat"></p>
+            <p id="sneaker-voorraad"></p>
+            <p id="sneaker-prijs"></p>
+            <button onclick="orderSneaker()" id="order-button">Bestel</button>
+        </div>
     </div>
 </main>
 <footer>

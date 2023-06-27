@@ -1,63 +1,61 @@
 body {
-    background: linear-gradient(110.2deg, rgb(54, 197, 240) 8.2%, rgb(74, 21, 75) 92.4%);
+    background: #1B2845;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background: #f2f2f2;
+    background: #E7ECEF;
     border-bottom: 1px solid #ccc;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
     display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-width: 100px;
 }
 
 #title {
-    font-family: Candara;
-    font-style: italic;
-    margin-left: 20px;
+    margin-left: 15px;
+    font-family: ruda black;
+    color: #1B2845;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 7px;
 }
 
 .navbar {
     margin-left: auto;
-    color: #d5e9f0;
 }
 
 .navbar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
 .navbar ul li {
     margin-right: 20px;
-    background-color: #f2f2f2;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .navbar ul li a {
-    color: #333;
+    color: #1B2845;
     text-decoration: none;
+    font-weight: bolder;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+main {
+    padding: 10px;
+    height: 95vh;
+}
+
+.sneakerBox {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 40px;
 }
 
 .sneakerDropdown {
@@ -76,8 +74,10 @@ header {
     padding: 20px;
     border-radius: 10px;
     width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 10px;
 }
 
 .sneaker-wijzigen label {
@@ -100,7 +100,7 @@ header {
 }
 
 #wijzigButton {
-    background-color: #113f67;
+    background-color: #5C7AFF;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -111,11 +111,11 @@ header {
 }
 
 #wijzigButton:hover {
-    background-color: rgb(54, 197, 240);
+    background-color: #4A8FE7;
 }
 
 #verwijderButton {
-    background-color: #cc0000;
+    background-color: #D64045;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -123,16 +123,15 @@ header {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
-    margin-left: 10px; /* Toegevoegde marge aan de linkerkant */
+    margin-left: 10px;
 }
 
 #verwijderButton:hover {
-    background-color: #ff3333;
+    background-color: #C3272D;
 }
 
-
 footer {
-    background: #f2f2f2;
+    background: #E7ECEF;
     padding: 20px;
     text-align: center;
 }

@@ -8,11 +8,17 @@ function fetchSneakers() {
 function generateSneakerCards(sneakers) {
     const sneakerList = document.querySelector('.sneaker-list');
 
+    // Verwijder bestaande cards
+    while (sneakerList.firstChild) {
+        sneakerList.removeChild(sneakerList.firstChild);
+    }
+
     sneakers.forEach(sneaker => {
         const sneakerCard = createSneakerCard(sneaker);
         sneakerList.appendChild(sneakerCard);
     });
 }
+
 
 // Functie om een sneaker card te maken
 function createSneakerCard(sneaker) {
@@ -21,12 +27,12 @@ function createSneakerCard(sneaker) {
 
     const img = document.createElement('img');
     img.src = `../images/${sneaker.image}`;
-    img.alt = `Sneaker ${sneaker.merk}`;
+    img.alt = `Sneaker ${sneaker.beschrijving}`;
     sneakerCard.appendChild(img);
 
     const label = document.createElement('label');
     const h3 = document.createElement('h3');
-    h3.textContent = `${sneaker.merk}`;
+    h3.textContent = `${sneaker.merk} ${sneaker.beschrijving}`;
     label.appendChild(h3);
     label.addEventListener('click', () => {
         navigateToSneakerProduct(sneaker.artikelnummer);

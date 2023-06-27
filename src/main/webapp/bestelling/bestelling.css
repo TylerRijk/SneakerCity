@@ -1,0 +1,170 @@
+body {
+    background: #1B2845;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #E7ECEF;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+#title {
+    margin-left: 15px;
+    font-family: ruda black;
+    color: #1B2845;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.navbar ul li a {
+    color: #1B2845;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.sneaker-details {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sneaker-img {
+    display: flex;
+    align-items: center;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #5C7AFF;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+#sneaker-image {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.sneaker-info {
+    flex-grow: 1;
+}
+
+#sneaker-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#sneaker-beschrijving,
+#sneaker-merk,
+#sneaker-kleur,
+#sneaker-maat {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#sneaker-voorraad {
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+#sneaker-prijs {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bezorgadres {
+    position: relative;
+    margin: 50px auto 50px 230px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+form h3 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #5C7AFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4A8FE7;
+}
+
+footer {
+    background: #E7ECEF;
+    padding: 20px;
+    text-align: center;
+}

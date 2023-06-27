@@ -21,10 +21,10 @@ function populateSneakerDetails(sneaker) {
     const sneakerBeschrijving = document.getElementById('sneaker-beschrijving');
     const sneakerPrijs = document.getElementById('sneaker-prijs');
     const sneakerVoorraad = document.getElementById('sneaker-voorraad');
-    const orderButton = document.getElementById('order-button');
+    // const orderButton = document.getElementById('order-button');
 
     sneakerImage.src = `../images/${sneaker.image}`;
-    sneakerImage.alt = `Sneaker ${sneaker.merk}`;
+    sneakerImage.alt = `Sneaker ${sneaker.beschrijving}`;
     sneakerTitle.textContent = `${sneaker.merk}`;
     sneakerMerk.textContent = `Artikelnummer: ${sneaker.artikelnummer}`;
     sneakerBeschrijving.textContent = `${sneaker.beschrijving}`;
@@ -32,10 +32,34 @@ function populateSneakerDetails(sneaker) {
     sneakerMaat.textContent = `Maat: ${sneaker.maat}`;
     sneakerPrijs.textContent = `Prijs: €${sneaker.prijs}`;
     sneakerVoorraad.textContent = `Voorraad: ${sneaker.voorraad ? 'Op voorraad' : 'Niet op voorraad'}`;
-    orderButton.addEventListener('click', () => {
-        console.log('Bestelling geplaatst:', sneaker);
-        window.location.href = "../bestelling/bestelling.html"
-    });
+}
+
+
+function orderSneaker() {
+    // Details ophalen
+    let sneakerDetails = {
+        title: document.getElementById("sneaker-title").innerText,
+        beschrijving: document.getElementById("sneaker-beschrijving").innerText,
+        merk: document.getElementById("sneaker-merk").innerText,
+        kleur: document.getElementById("sneaker-kleur").innerText,
+        maat: document.getElementById("sneaker-maat").innerText,
+        voorraad: document.getElementById("sneaker-voorraad").innerText,
+        prijs: document.getElementById("sneaker-prijs").innerText,
+        image: document.getElementById("sneaker-image").src
+    };
+
+    // Querystring opbouwen met de details van de sneaker
+    let queryString = "?";
+    for (let key in sneakerDetails) {
+        if (sneakerDetails.hasOwnProperty(key)) {
+            queryString += key + "=" + encodeURIComponent(sneakerDetails[key]) + "&";
+        }
+    }
+
+    queryString = queryString.slice(0, -1);
+
+    // Open pagina voor bijbehorende sneaker bestelling
+    window.location.href = "../bestelling/bestelling.html" + queryString;
 }
 
 // Roep de functie aan wanneer de DOM geladen is

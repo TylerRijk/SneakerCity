@@ -1,43 +1,133 @@
-.navbar{
+body {
+    background: #1B2845;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #E7ECEF;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: steelblue;
 }
-nav{
-    flex: 1;
-    text-align: right;
+
+.logo {
+    display: flex;
 }
-nav ul{
-    display: inline-block;
-    list-style-type: none;
+
+#title {
+    margin-left: 15px;
+    font-family: ruda black;
+    color: #1B2845;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 7px;
 }
-nav ul li{
-    display: inline-block;
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
     margin-right: 20px;
+    padding: 10px;
 }
-a{
+
+.navbar ul li a {
+    color: #1B2845;
     text-decoration: none;
-    color: black;
-}
-p{
-    color: black;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-weight: bolder;
 }
 
-.middentext {
+main {
+    padding: 10px;
+    height: 61vh;
+}
+
+h2 {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    color: #f2f2f2;
+    max-width: fit-content;
+    font-size: 35px;
+    padding: 2px;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    max-width: 150px;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.box a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #1B2845;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.box a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1B2845;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s;
+}
+
+.box a:hover:before {
+    transform: scaleX(1);
+}
+
+.btn {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 170px;
     text-align: center;
 }
 
-.footer {
-    text-align: center;
+button {
+    background: #5C7AFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.inloggen {
+button:hover {
+    background-color: #4A8FE7;
+}
+
+footer {
+    background: #E7ECEF;
+    padding: 20px;
     text-align: center;
 }

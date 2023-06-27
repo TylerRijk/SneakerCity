@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <title>SneakerCity | Account</title>
     <link rel="stylesheet" href="account.css">
+    <script src="../../loginCheck.js"></script>
     <script src="account.js"></script>
 </head>
 <body>
 <header>
+    <div class="logo">
+        <img src="../../images/Sneakercity.png" width="125" alt="SneakerCity logo">
+    </div>
+    <h1 id="title">SneakerCity</h1>
     <div class="navbar">
-        <div class="logo">
-            <img src="../../images/sneakercity-logo.png" width="125">
-        </div>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/sneakers/sneakers.html">Sneakers</a></li>
-                <li><a href="/login/login.html">Account</a></li>
+                <li><a id="accountLink" href="account.html" onclick="checkLogin()">Account</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <div id="accountOverzicht">
-        <h1>Account Overzicht</h1>
-        <p>Voornaam: <span id="voornaam"></span></p>
-        <p>Achternaam: <span id="achternaam"></span></p>
-        <p>Adres: <span id="adres"></span></p>
-        <p>Woonplaats: <span id="woonplaats"></span></p>
-        <p>Telefoonnummer: <span id="telefoonnummer"></span></p>
+    <h2>Hallo klant! </h2>
+    <div class="container">
+        <div class="box">
+            <a href="account.html">Mijn account</a>
+            <a href="../bestellingen/bestellingen.html">Bestellingen</a>
+        </div>
+    </div>
+    <div class="btn">
+        <button type="button" onclick="logout()" id="uitloggen">Log uit</button>
     </div>
 </main>
+<footer>
+    <div class="footer">
+        <p>&copy; 2023 SneakerCity</p>
+    </div>
+</footer>
 </body>
 </html>

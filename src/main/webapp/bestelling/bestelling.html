@@ -2,9 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SneakerCity | Bestellen</title>
+    <link rel="stylesheet" href="bestelling.css">
+    <script src="../loginCheck.js"></script>
+    <script src="bestelling.js"></script>
 </head>
 <body>
+<header>
+    <div class="logo">
+        <img src="../images/Sneakercity.png" width="125" alt="SneakerCity logo">
+    </div>
+    <h1 id="title">SneakerCity</h1>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/sneakers/sneakers.html">Sneakers</a></li>
+                <li><a id="accountLink" href="../klant/account/account.html" onclick="checkLogin()">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="sneaker-details">
+        <div class="sneaker-img">
+            <div class="img-wrapper">
+                <img id="sneaker-image" src="" alt="Sneaker{artikelnummer}">
+            </div>
+        </div>
+        <div class="sneaker-info">
+            <h2 id="sneaker-title"></h2>
+            <p id="sneaker-beschrijving"></p>
+            <p id="sneaker-merk"></p>
+            <p id="sneaker-kleur"></p>
+            <p id="sneaker-maat"></p>
+            <p id="sneaker-voorraad"></p>
+            <p id="sneaker-prijs"></p>
+        </div>
+    </div>
+    <div class="bezorgadres">
+        <div class="container">
+            <form>
+                <h3>Bezorgadres:</h3>
 
+                <label for="voornaam">Voornaam:</label>
+                <input class="input-field" type="text" id="voornaam">
+
+                <label for="achternaam">Achternaam:</label>
+                <input class="input-field" type="text" id="achternaam">
+
+                <label for="email">Email:</label>
+                <input class="input-field" type="email" id="email">
+
+                <label for="adres">Adres:</label>
+                <input class="input-field" type="text" id="adres">
+
+                <label for="postcode">Postcode:</label>
+                <input class="input-field" type="text" id="postcode">
+
+                <label for="woonplaats">Woonplaats:</label>
+                <input class="input-field" type="text" id="woonplaats">
+
+                <label for="factuuradres">Bezorgadres hetzelfde als factuuradres</label>
+                <input type="checkbox" checked="checked" id="factuuradres">
+
+                <input type="submit" value="Ga door naar betaalpagina" class="btn">
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <p>&copy; 2023 SneakerCity</p>
+    </div>
+</footer>
 </body>
 </html>

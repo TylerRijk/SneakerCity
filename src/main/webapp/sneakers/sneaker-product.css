@@ -1,94 +1,92 @@
 body {
-    background: linear-gradient(110.2deg, rgb(54, 197, 240) 8.2%, rgb(74, 21, 75) 92.4%);
+    background: #1B2845;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background: #f2f2f2;
+    background: #E7ECEF;
     border-bottom: 1px solid #ccc;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
     display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-width: 100px;
 }
 
 #title {
-    margin-left: 20px;
-    font-family: Candara;
-    font-style: italic;
+    margin-left: 15px;
+    font-family: ruda black;
+    color: #1B2845;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 7px;
 }
+
 .navbar {
     margin-left: auto;
-    color: #d5e9f0;
 }
 
 .navbar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
 .navbar ul li {
     margin-right: 20px;
-    background-color: #f2f2f2;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .navbar ul li a {
-    color: #333;
+    color: #1B2845;
     text-decoration: none;
-}
-
-header {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
+    font-weight: bolder;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 64vh;
 }
 
 .sneaker-details {
     background: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    display: flex;
+}
+
+.sneaker-img {
+    display: flex;
+    align-items: center;
+}
+
+.img-wrapper {
+    display: flex;
+    border: 3px solid #5C7AFF;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 20px;
 }
 
 #sneaker-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
-    max-width: 600px;
-    position: relative;
-    margin-bottom: 10px;
-    border: 5px solid #ccc;
-    border-radius: 10px;
-    padding: 5px;
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.sneaker-info {
+    flex-grow: 1;
 }
 
 #sneaker-title {
-    font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -97,13 +95,10 @@ main {
 #sneaker-merk,
 #sneaker-kleur,
 #sneaker-maat {
-    margin-bottom: 5px;
     text-align: center;
 }
 
 #sneaker-voorraad {
-    margin-bottom: 10px;
-    color: black;
     text-align: center;
 }
 
@@ -114,9 +109,8 @@ main {
 
 #order-button {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    background: #113f67;
+    margin: 0 auto;
+    background: #5C7AFF;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -124,8 +118,12 @@ main {
     border-radius: 5px;
 }
 
+#order-button:hover {
+    background-color: #4A8FE7;
+}
+
 footer {
-    background: #f2f2f2;
+    background: #E7ECEF;
     padding: 20px;
     text-align: center;
 }

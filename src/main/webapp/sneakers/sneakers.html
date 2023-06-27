@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="../sneakers/sneakers.css">
     <script src="../loginCheck.js"></script>
     <script src="sneakers.js"></script>
+    <script src="filter.js"></script>
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="../images/sneakercity-websitelogo.png" width="125">
+        <img src="../images/Sneakercity.png" width="125" alt="SneakerCity logo">
     </div>
     <h1 id="title">SneakerCity</h1>
     <div class="navbar">
@@ -24,7 +25,38 @@
     </div>
 </header>
 <main>
-    <h2>De collectie</h2>
+    <h2>The Collection</h2>
+    <div class="filters">
+        <div class="filters-row">
+            <div class="filters-box">
+                <label for="merk-filter">Merk:</label>
+                <select id="merk-filter">
+                    <!--Opties worden hier gegenereerd-->
+                </select>
+            </div>
+            <div class="filters-box">
+                <label for="kleur-filter">Kleur:</label>
+                <select id="kleur-filter">
+                    <!--Opties worden hier gegenereerd-->
+                </select>
+            </div>
+        </div>
+        <div class="filters-row">
+            <div class="filters-box">
+                <label for="maat-filter">Maat:</label>
+                <select id="maat-filter">
+                    <!--Opties worden hier gegenereerd-->
+                </select>
+            </div>
+            <div class="filters-box">
+                <label for="prijs-filter">Prijs:</label>
+                <select id="prijs-filter">
+                    <!--Opties worden hier gegenereerd-->
+                </select>
+            </div>
+        </div>
+    </div>
+
     <!-- Hieronder worden de sneaker cards gegenereerd -->
     <div class="sneaker-list"></div>
 </main>
