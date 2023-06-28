@@ -9,19 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Algemene design gemaakt.&#10;Kleine fixes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/BestellingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/BestellingResource.java" afterDir="false" />
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Bestelling wordt opgeslagen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceBestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceBestelling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/BestellingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/BestellingResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +135,7 @@
       <command value="mvn clean package azure-webapp:deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BusinessLayerTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.74">
     <configuration name="BusinessLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
       <extension name="coverage">
@@ -374,7 +368,7 @@
       <workItem from="1687856899481" duration="11000" />
       <workItem from="1687859196018" duration="25056000" />
       <workItem from="1687887390566" duration="341000" />
-      <workItem from="1687943770787" duration="15444000" />
+      <workItem from="1687943770787" duration="22224000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -495,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687887362653</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Bestelling wordt opgeslagen">
+      <created>1687961122908</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687961122908</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,6 +530,7 @@
     <MESSAGE value="Use case Sneaker voorraad aanpassen uitgewerkt.&#10;Sneaker kunnen wijzigen en verwijderen.&#10;PUT en DELETE methods toegevoegd.&#10;Design nog niet af maar functionaliteit werkend" />
     <MESSAGE value="Extra commentaar toegevoegd&#10;Beheer klasse verwijderd (onnodig)&#10;Alles af voor sprint 3" />
     <MESSAGE value="Algemene design gemaakt.&#10;Kleine fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Algemene design gemaakt.&#10;Kleine fixes" />
+    <MESSAGE value="Bestelling wordt opgeslagen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bestelling wordt opgeslagen" />
   </component>
 </project>

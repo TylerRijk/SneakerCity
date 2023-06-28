@@ -31,6 +31,7 @@ public class Bestelling implements Serializable {
         this.postcode = postcode;
         this.woonplaats = woonplaats;
         this.sneaker = sneaker;
+        alleBestellingen.add(this);
     }
 
 

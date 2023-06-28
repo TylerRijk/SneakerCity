@@ -105,6 +105,38 @@ h2 {
     transform: scaleX(1);
 }
 
+.info {
+    position: relative;
+    bottom: 100px;
+}
+
+.bestellingBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestellingDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sneakerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: #f2f2f2;
+    font-size: 15px;
+    margin: 5px;
+}
+
+
 footer {
     background: #E7ECEF;
     padding: 20px;
