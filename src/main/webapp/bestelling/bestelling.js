@@ -27,7 +27,7 @@ function getParameterByName(name, url) {
 }
 
 // Onderstaande wordt uitgevoerd als de pagina is geladen
-window.onload = function() {
+window.onload = function () {
     // Details van een sneaker ophalen uit de query parameters in de url
     let sneakerDetails = {
         title: getParameterByName("title"),
@@ -50,3 +50,64 @@ window.onload = function() {
     document.getElementById("sneaker-prijs").innerText = sneakerDetails.prijs;
     document.getElementById("sneaker-image").src = sneakerDetails.image;
 };
+
+function buySneaker() {
+    let voornaam = document.getElementById("voornaam").value;
+    let achternaam = document.getElementById("achternaam").value;
+    let email = document.getElementById("email").value;
+    let adres = document.getElementById("adres").value;
+    let postcode = document.getElementById("postcode").value;
+    let woonplaats = document.getElementById("woonplaats").value;
+
+    if (!voornaam || !achternaam || !email || !adres || !postcode || !woonplaats) {
+        alert("Vul alle velden in om uw bestelling af te ronden")
+        return;
+    }
+
+    // let artikelnummerText = document.getElementById("sneaker-merk").innerText;
+    // let artikelnummer = artikelnummerText.replace("Artikelnummer: ", "");
+
+
+    let sneakerDetails = {
+        merk: document.getElementById("sneaker-title").innerText,
+        beschrijving: document.getElementById("sneaker-beschrijving").innerText,
+        artikelnummer: document.getElementById("sneaker-merk").innerText.replace("Artikelnummer: ", ""),
+        kleur: document.getElementById("sneaker-kleur").innerText.replace("Kleur: ", ""),
+        maat: parseInt(document.getElementById("sneaker-maat").innerText.replace("Maat: ", "")),
+        voorraad: document.getElementById("sneaker-voorraad").innerText === "Op voorraad" ? 0 : 1,
+        prijs: parseFloat(document.getElementById("sneaker-prijs").innerText.replace("Prijs: €", "")),
+        image: document.getElementById("sneaker-image").src
+    };
+
+
+    let bestelling = {
+        voornaam: voornaam,
+        achternaam: achternaam,
+        email: email,
+        adres: adres,
+        postcode: postcode,
+        woonplaats: woonplaats,
+        artikelnummer: sneakerDetails.artikelnummer
+    }
+
+    console.log(bestelling);
+
+    fetch('/restservices/bestelling', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(bestelling)
+    })
+        .then(response => {
+            if (response.ok) {
+                alert("Bedankt voor uw bestelling!");
+                window.location.href = "../klant/account/account.html";
+            } else {
+                alert("Er is een probleem opgetreden bij het verwerken van uw bestelling")
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}

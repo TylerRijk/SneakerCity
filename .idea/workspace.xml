@@ -9,50 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Extra commentaar toegevoegd&#10;Beheer klasse verwijderd (onnodig)&#10;Alles af voor sprint 3">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Sneakercity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Yeezy-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slipper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/filter.js" afterDir="false" />
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Algemene design gemaakt.&#10;Kleine fixes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/BestellingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/BestellingResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/account/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-toevoegen/sneaker-toevoegen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/sneaker-wijzigen/sneaker-wijzigen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Klant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PersistenceBestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/PersistenceBestelling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/sneaker2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/sneaker4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/sneaker5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneakercity-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneakercity-websitelogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/account/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/account/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bestelling/bestelling.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneaker-product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sneakers/sneakers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/PersistenceKlantTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/PersistenceMedewerkerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/persistence/PersistenceSneakerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webservices/SneakerResourceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/BusinessLayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +33,9 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -172,7 +141,7 @@
       <command value="mvn clean package azure-webapp:deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.74">
+  <component name="RunManager" selected="JUnit.BusinessLayerTest">
     <configuration name="BusinessLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IPASS-SneakerCity" />
       <extension name="coverage">
@@ -403,7 +372,9 @@
       <workItem from="1687597697548" duration="9429000" />
       <workItem from="1687764870207" duration="12847000" />
       <workItem from="1687856899481" duration="11000" />
-      <workItem from="1687859196018" duration="24704000" />
+      <workItem from="1687859196018" duration="25056000" />
+      <workItem from="1687887390566" duration="341000" />
+      <workItem from="1687943770787" duration="15444000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -517,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687435556115</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Algemene design gemaakt.&#10;Kleine fixes">
+      <created>1687887362653</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687887362653</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,6 +528,7 @@
     <MESSAGE value="Admin account uitgewerkt en Use Case Sneakers Toevoegen werkend gemaakt. Design alleen nog verbeteren.&#10;Elke nieuwe sneaker wordt gelijk opgeslagen en getoond" />
     <MESSAGE value="Use case Sneaker voorraad aanpassen uitgewerkt.&#10;Sneaker kunnen wijzigen en verwijderen.&#10;PUT en DELETE methods toegevoegd.&#10;Design nog niet af maar functionaliteit werkend" />
     <MESSAGE value="Extra commentaar toegevoegd&#10;Beheer klasse verwijderd (onnodig)&#10;Alles af voor sprint 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extra commentaar toegevoegd&#10;Beheer klasse verwijderd (onnodig)&#10;Alles af voor sprint 3" />
+    <MESSAGE value="Algemene design gemaakt.&#10;Kleine fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Algemene design gemaakt.&#10;Kleine fixes" />
   </component>
 </project>

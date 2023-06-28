@@ -18,7 +18,7 @@ public class BusinessLayerTest {
         medewerker = new Medewerker("AdminTest", "AdminTest", "admin", 0, "Test@admin.nl");
         klant = new Klant("KlantTest", "KlantTest", "klant", 1, "klant@test.nl");
         sneaker = new Sneaker(1, "TestMerk", "TestKleur", 42, "TestBeschrijving", 100.00, "TestImage.png", 1);
-        bestelling = new Bestelling(1, new Date(), 99.99, true, klant, null);
+        bestelling = new Bestelling(100, new Date(), 34567, "Test", "Test", "Test", "0000AA", "Test", sneaker);
     }
 
     @Test
@@ -86,9 +86,9 @@ public class BusinessLayerTest {
 
     @Test
     public void testUniekeBestellingID() {
-        Bestelling bestelling2 = new Bestelling(2, new Date(), 99.99, true, null, null);
+        Bestelling bestelling2 = new Bestelling(42, new Date(), 367, "Test", "Test", "Test", "0000AA", "Test", sneaker);
 
-        assertNotEquals(bestelling.getBestellingID(), bestelling2.getBestellingID());
+        assertNotEquals(bestelling.getBestellingId(), bestelling2.getBestellingId());
     }
 
     @Test

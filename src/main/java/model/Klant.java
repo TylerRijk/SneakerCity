@@ -24,6 +24,15 @@ public class Klant extends User {
         return bestellingen;
     }
 
+    public static int getKlantIdByEmail(String email) {
+        for (User user : alleUsers) {
+            if (user instanceof Klant && ((Klant) user).getEmail().equals(email)) {
+                return user.getId();
+            }
+        }
+        return -1;
+    }
+
 //    @Override
 //    public boolean equals(Object andereObject) {
 //        boolean gelijkeObjecten = false;

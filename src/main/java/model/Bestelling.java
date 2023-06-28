@@ -1,26 +1,41 @@
 package model;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
-public class Bestelling {
-    private int bestellingID;
+public class Bestelling implements Serializable {
+    private int bestellingId;
     private Date datum;
     private double totaalPrijs;
     private boolean betalingStatus;
+    private String voornaam;
+    private String achternaam;
+    private String adres;
+    private String postcode;
+    private String woonplaats;
+    private String email;
+    private int klantId;
     private Klant klant;
     private Sneaker sneaker;
 
-    public Bestelling(int bestellingID, Date datum, double totaalPrijs, boolean betalingStatus, Klant klant, Sneaker sneaker) {
-        this.bestellingID = bestellingID;
+    public static ArrayList<Bestelling> alleBestellingen = new ArrayList<>();
+
+    public Bestelling(int bestellingId, Date datum, int klantId, String voornaam, String achternaam, String adres, String postcode, String woonplaats, Sneaker sneaker) {
+        this.bestellingId = bestellingId;
         this.datum = datum;
-        this.totaalPrijs = totaalPrijs;
-        this.betalingStatus = betalingStatus;
-        this.klant = klant;
+        this.klantId = klantId;
+        this.voornaam = voornaam;
+        this.achternaam = achternaam;
+        this.adres = adres;
+        this.postcode = postcode;
+        this.woonplaats = woonplaats;
         this.sneaker = sneaker;
     }
 
-    public int getBestellingID() {
-        return bestellingID;
+
+    public int getBestellingId() {
+        return bestellingId;
     }
 
     public Date getDatum() {
@@ -52,5 +67,15 @@ public class Bestelling {
 
     public Sneaker getSneaker() {
         return sneaker;
+    }
+
+    public static int generateId() {
+        int highestId = 0;
+        for (Bestelling bestelling : alleBestellingen) {
+            if (bestelling.getBestellingId() > highestId) {
+                highestId = bestelling.getBestellingId();
+            }
+        }
+        return highestId + 1;
     }
 }
