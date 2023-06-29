@@ -87,7 +87,8 @@ function populateBestellingDropDown() {
 
 function getAllBestellingen() {
     return fetch('/restservices/bestelling')
-        .then(response => response.json());
+        .then(response => response.json())
+        .catch(error => console.log(error));
 }
 
 function getBestellingById(bestellingId) {

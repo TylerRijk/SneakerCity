@@ -123,11 +123,26 @@ h2 {
     align-items: center;
 }
 
+.bestellingDetails p {
+    background: #5C7AFF;
+    border: #f2f2f2;
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: underline;
+}
+
 .sneakerDetails {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sneakerDetails p {
+    background: #D64045;
+    padding: 2px;
+    border: #f2f2f2;
+    border-radius: 5px;
 }
 
 p {
@@ -141,4 +156,8 @@ footer {
     background: #E7ECEF;
     padding: 20px;
     text-align: center;
+}
+
+footer p {
+    color: black;
 }

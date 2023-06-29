@@ -9,10 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Bestelling wordt opgeslagen">
+    <list default="true" id="4a2e5114-fe18-4e53-b9c9-587a1e4cea11" name="Changes" comment="Eerste versie bestellingen tonen bij klant account">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/adidasNMD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/adidasRafSimons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/jordanChicago.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/jordanThunder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/nikeOffWhite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/nikeSupreme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/nikeTravisScott.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/oreo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/vansNami.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/yeezyCarbon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/yeezyOat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/yeezyZebra.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bestelling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listener/MyServletContextListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webservices/BestellingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/BestellingResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/slipper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/sneaker5.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/klant/bestellingen/bestellingen.js" afterDir="false" />
@@ -368,7 +386,10 @@
       <workItem from="1687856899481" duration="11000" />
       <workItem from="1687859196018" duration="25056000" />
       <workItem from="1687887390566" duration="341000" />
-      <workItem from="1687943770787" duration="22224000" />
+      <workItem from="1687943770787" duration="22322000" />
+      <workItem from="1688029889032" duration="11000" />
+      <workItem from="1688032113654" duration="33000" />
+      <workItem from="1688032400310" duration="10054000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684237250145</created>
@@ -496,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687961122908</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Eerste versie bestellingen tonen bij klant account">
+      <created>1687967748815</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687967748815</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,6 +559,7 @@
     <MESSAGE value="Extra commentaar toegevoegd&#10;Beheer klasse verwijderd (onnodig)&#10;Alles af voor sprint 3" />
     <MESSAGE value="Algemene design gemaakt.&#10;Kleine fixes" />
     <MESSAGE value="Bestelling wordt opgeslagen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bestelling wordt opgeslagen" />
+    <MESSAGE value="Eerste versie bestellingen tonen bij klant account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eerste versie bestellingen tonen bij klant account" />
   </component>
 </project>
