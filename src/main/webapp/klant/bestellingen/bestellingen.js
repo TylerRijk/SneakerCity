@@ -1,8 +1,10 @@
 function populateBestellingDropDown() {
     const dropdown = document.getElementById('bestellingDropDown');
 
+    // Alle bestellingen verkrijgen
     getAllBestellingen()
         .then(bestellingen => {
+            // Voor elke bestelling een nieuwe optie aanmaken
             bestellingen.forEach(bestelling => {
                 const option = document.createElement('option');
                 option.value = bestelling.bestellingId;
@@ -12,6 +14,7 @@ function populateBestellingDropDown() {
         })
         .catch(error => console.log(error));
 
+    // Standaard toevoegen als optie
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
     defaultOption.text = 'Selecteer uw bestelling';
@@ -19,14 +22,18 @@ function populateBestellingDropDown() {
     defaultOption.selected = true;
     dropdown.insertBefore(defaultOption, dropdown.firstChild);
 
+    // Event listener toevoegen aan dropdown om te reageren op veranderingen
     dropdown.addEventListener('change', function () {
+        // Geselecteerde bestelling ophalen
         const selectedBestelling = dropdown.value;
         getBestellingById(selectedBestelling)
             .then(bestelling => {
                 const detailsContainer = document.getElementById("bestellingDetails");
 
+                // Alle details eerst leeg maken
                 detailsContainer.innerHTML = "";
 
+                // Bestelgegevens instellen
                 const bestellingIdElement = document.createElement('p');
                 bestellingIdElement.textContent = "Bestelnummer: " + bestelling.bestellingId;
                 detailsContainer.appendChild(bestellingIdElement);
@@ -45,12 +52,15 @@ function populateBestellingDropDown() {
                 datumElement.textContent = datumString;
                 detailsContainer.appendChild(datumElement);
 
+                // Sneaker ophalen van de bestelling aan de hand van artikelnummer
                 getSneakerByArtikelnummer(bestelling.sneaker.artikelnummer)
                     .then(sneaker => {
                         const sneakerDetailsContainer = document.getElementById("sneakerDetails");
 
+                        // Alle details eerst leeg maken
                         sneakerDetailsContainer.innerHTML = "";
 
+                        // Alle sneaker gegevens instellen
                         const artikelnummerElement = document.createElement('p');
                         artikelnummerElement.textContent = "Artikelnummer: " + sneaker.artikelnummer;
                         sneakerDetailsContainer.appendChild(artikelnummerElement);
@@ -85,12 +95,14 @@ function populateBestellingDropDown() {
     });
 }
 
+// Alle bestellingen ophalen uit het systeem
 function getAllBestellingen() {
     return fetch('/restservices/bestelling')
         .then(response => response.json())
         .catch(error => console.log(error));
 }
 
+// Bestelling met specifieke id ophalen uit het systeem
 function getBestellingById(bestellingId) {
     return fetch(`/restservices/bestelling/${bestellingId}`)
         .then(response => {
@@ -102,6 +114,7 @@ function getBestellingById(bestellingId) {
         });
 }
 
+// Sneaker met specifieke artikelnummer ophalen uit systeem
 function getSneakerByArtikelnummer(artikelnummer) {
     return fetch(`/restservices/sneakers/${artikelnummer}`)
         .then(response => {
@@ -113,6 +126,7 @@ function getSneakerByArtikelnummer(artikelnummer) {
         });
 }
 
+// Als de DOM geladen is gelijk alle bestellingen instellen in de dropdown
 document.addEventListener('DOMContentLoaded', function () {
     populateBestellingDropDown();
 });

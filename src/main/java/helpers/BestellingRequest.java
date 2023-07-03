@@ -1,7 +1,5 @@
 package helpers;
 
-import model.Sneaker;
-
 import java.io.Serializable;
 
 public class BestellingRequest implements Serializable {

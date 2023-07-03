@@ -21,7 +21,6 @@ function populateSneakerDetails(sneaker) {
     const sneakerBeschrijving = document.getElementById('sneaker-beschrijving');
     const sneakerPrijs = document.getElementById('sneaker-prijs');
     const sneakerVoorraad = document.getElementById('sneaker-voorraad');
-    // const orderButton = document.getElementById('order-button');
 
     sneakerImage.src = `../images/${sneaker.image}`;
     sneakerImage.alt = `Sneaker ${sneaker.beschrijving}`;

@@ -21,8 +21,6 @@ function sneakerToevoegen() {
         'voorraad': voorraad
     }
 
-    // console.log(jsonRequestBody);
-
     // POST verzoek naar de server maken om nieuwe sneaker toe te voegen
     fetch("/restservices/sneakers", {
         headers: {"Content-Type": "application/json"},

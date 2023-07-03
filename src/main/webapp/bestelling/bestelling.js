@@ -52,6 +52,7 @@ window.onload = function () {
 };
 
 function buySneaker() {
+    // Waardes ophalen van de form
     let voornaam = document.getElementById("voornaam").value;
     let achternaam = document.getElementById("achternaam").value;
     let email = document.getElementById("email").value;
@@ -59,15 +60,13 @@ function buySneaker() {
     let postcode = document.getElementById("postcode").value;
     let woonplaats = document.getElementById("woonplaats").value;
 
+    // Controleren of alle velden zijn ingevuld
     if (!voornaam || !achternaam || !email || !adres || !postcode || !woonplaats) {
         alert("Vul alle velden in om uw bestelling af te ronden")
         return;
     }
 
-    // let artikelnummerText = document.getElementById("sneaker-merk").innerText;
-    // let artikelnummer = artikelnummerText.replace("Artikelnummer: ", "");
-
-
+    // Object maken voor alle sneaker details
     let sneakerDetails = {
         merk: document.getElementById("sneaker-title").innerText,
         beschrijving: document.getElementById("sneaker-beschrijving").innerText,
@@ -79,7 +78,7 @@ function buySneaker() {
         image: document.getElementById("sneaker-image").src
     };
 
-
+    // Bestelling object maken om mee te sturen als body
     let bestelling = {
         voornaam: voornaam,
         achternaam: achternaam,
@@ -90,8 +89,6 @@ function buySneaker() {
         artikelnummer: sneakerDetails.artikelnummer
     }
 
-    console.log(bestelling);
-
     fetch('/restservices/bestelling', {
         method: 'POST',
         headers: {
@@ -101,6 +98,7 @@ function buySneaker() {
     })
         .then(response => {
             if (response.ok) {
+                // Geen betalingsysteem dus gelijk besteld...
                 alert("Bedankt voor uw bestelling!");
                 window.location.href = "../klant/account/account.html";
             } else {

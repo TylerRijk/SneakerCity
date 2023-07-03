@@ -12,8 +12,6 @@ function gebruikerLogin() {
     // Body aanmaken met gebruikersgegevens
     const jsonRequestBody = {'username': username, 'password': password};
 
-    //console.log(jsonRequestBody);
-
     // POST verzoek maken naar de server om in te loggen
     fetch("/restservices/authentication/login", {
         headers: {"Content-Type": "application/json"},

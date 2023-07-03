@@ -25,8 +25,6 @@ function gebruikerRegister() {
         'password': password
     };
 
-    //console.log(jsonRequestBody);
-
     // Maak een POST verzoek naar de server om gebruiker te registreren
     fetch("/restservices/user/register", {
         headers: {"Content-Type": "application/json"},

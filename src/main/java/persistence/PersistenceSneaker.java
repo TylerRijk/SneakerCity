@@ -11,11 +11,13 @@ public class PersistenceSneaker {
 
 
     public static void saveSneaker(Sneaker sneaker) {
+        // Directory instellen
         File dir = new File(PERSISTENCE_DIRECTORY);
         if (!dir.exists()) {
             dir.mkdirs();
         }
 
+        // Sneaker opslaan als .obj
         String fileName = PERSISTENCE_DIRECTORY + "/sneaker" + sneaker.getArtikelnummer() + FILE_EXTENSION;
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(fileName))) {
             outputStream.writeObject(sneaker);
@@ -25,12 +27,14 @@ public class PersistenceSneaker {
     }
 
     public static Sneaker loadSneaker(int artikelnummer) {
+        // Sneaker ophalen van bijbehorende artikelnummer
         String fileName = PERSISTENCE_DIRECTORY + "/sneaker" + artikelnummer + FILE_EXTENSION;
         File file = new File(fileName);
         if (!file.exists()) {
             return null;
         }
 
+        // Bestand lezen en deserialiseren om de sneaker terug te geven
         try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(fileName))) {
             return (Sneaker) inputStream.readObject();
         } catch (IOException | ClassNotFoundException e) {
@@ -42,11 +46,13 @@ public class PersistenceSneaker {
 
     public static ArrayList<Sneaker> loadAllSneakers() {
         ArrayList<Sneaker> sneakers = new ArrayList<>();
+        // Directory ophalen
         File directory = new File(PERSISTENCE_DIRECTORY);
         if (!directory.exists()) {
             return sneakers;
         }
 
+        // Alle bestanden lezen en toevoegen aan de lijst met alle sneakers in het systeem
         File[] files = directory.listFiles();
         if (files != null) {
             for (File file : files) {
@@ -63,7 +69,9 @@ public class PersistenceSneaker {
     }
 
     public static void deleteSneaker(int artikelnummer) {
+        // Sneaker ophalen van bijbehorende artikelnummer
         String fileName = PERSISTENCE_DIRECTORY + "/sneaker" + artikelnummer + FILE_EXTENSION;
+        // Bestand verwijderen als deze bestaat
         File file = new File(fileName);
         if(file.exists()) {
             file.delete();

@@ -109,9 +109,6 @@ function sneakerWijzigen() {
         'voorraad': voorraad
     }
 
-    // console.log(jsonRequestBody);
-    // console.log(jsonRequestBody["artikelnummer"])
-
     // PUT verzoek naar de server maken om sneaker te wijzigen
     fetch("/restservices/sneakers/" + jsonRequestBody["artikelnummer"], {
         headers: {"Content-Type": "application/json"},
